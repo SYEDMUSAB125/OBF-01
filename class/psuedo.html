@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css psuedo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+        
+        .container{
+            height:300px;
+            width: 500px;
+            background-color: aquamarine;
+           margin: 100px ;
+           
+        }
+        .para{
+            
+           color: #643e3e;
+           }
+           .btn{
+               background-color: #6d9af3;
+               color: #ffffff;
+               border: none;
+               padding: 10px 20px;
+                margin: 10px;
+                border-radius: 5px;
+               
+           }
+           /* translation */
+            /* 2d 3d */
+           .btn:hover{
+            background-color: #3f6dc8;
+            cursor:pointer;
+            transform: rotate(45deg);
+           }
+           .box{
+            height: 100px;
+            width:100px;
+            background-color: #a13434;
+            color: aqua;
+           margin: 100px auto;
+           /* 360 1 turn  */
+           /* transform: translateX(100px); */
+           /* transform: translateZ(100px); */
+          
+            text-align: center;
+           }
+           .box:hover{
+            /* transition: property ; */
+            /* transition: durration ; */
+            /* transition: function ; */
+            /* transition: delay ; */
+            /* transition: transform ;
+            transition: 5s ;
+            transition: ease-in-out ;
+            transition: 2s; */
+            transition: all 1s ease-in-out 1s;
+            transform:  translateX(100px) rotate(360deg);
+            background-color: #3f6dc8;
+            /* margin:calc(100vh + 100px) auto; */
+            /* transform: translate(15px); */
+            /* transform: skewX(10deg ); */
+            /* transform: skewY(10deg); */
+           }
+    </style>
+</head>
+<body> 
+<!-- 
+        <div class="container">
+            <p class="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, consequuntur quod. Iure recusandae totam, nemo facere dolorem saepe sapiente labore laudantium debitis ea asperiores nostrum ratione odit tempora cupiditate quibusdam nam eveniet quasi impedit.</p>
+            <button class="btn" >Read more</button>
+           </div> -->
+    <div class="box">
+       hello
+    </div>
+   
+</body>
+</html>
