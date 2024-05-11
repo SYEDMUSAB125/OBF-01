@@ -1,0 +1,112 @@
+<!-- Media query -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .conatianer{
+        position:relative ;
+        top: 50%;
+        left: 50%;
+    }
+    .box1{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(36, 221, 104);
+        color: #ffffff;
+        position:absolute ;
+        top: 50%;
+        left: 50%;
+      
+        
+    }
+    .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(89, 25, 172);
+        color: #ffffff;
+        position:absolute ;
+        top: 20%;
+        left: 50%;
+    }
+    .box3 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(169, 144, 19);
+        color: #ffffff;
+        
+
+    }
+    .box4 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(158, 88, 27);
+        color: #ffffff;
+       
+
+    }
+    /* phone */
+    /* @media screen and (orientation:landscape) and (max-width:600px){
+    .box1{
+      display: block;
+      background-color: rgb(198, 223, 13);
+      
+   } } */
+  @media screen and (max-width:800px){
+    .box1{
+     left:0px
+      
+   } 
+   .box2{
+    display: none;
+   }
+}
+
+   /* tablet */
+   /* @media screen and (min-width:601px )  and (max-width:800px){
+    .box2{
+        display: block;
+   } }
+   /* laptop */
+   /* @media screen and (min-width:801px) and (max-width:1000px){
+    .box3{
+        display: block;
+   } }
+   /* computeer */
+   /* @media screen  and (min-width:1001px) {
+    .box4{
+        display: block;
+   } } */
+</style>
+<body>
+  <!-- <div class="conatianer">
+    <div class="box1">
+        <h1>phone</h1>
+    </div>
+    <div class="box2">
+        <h1>tablet</h1>
+    </div>
+    <div class="box3">
+        <h1>laptop</h1>
+    </div>
+    <div class="box4">
+        <h1>computer</h1>
+    </div>
+  </div> -->
+  <div class="container" >
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+
+
+
+</body>
+</html>
